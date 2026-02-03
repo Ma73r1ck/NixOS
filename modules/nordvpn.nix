@@ -123,7 +123,7 @@ in
       environment.systemPackages = [nordVpnPkg];
 
       users.groups.nordvpn = {};
-      users.groups.nordvpn.members = ["myypo"];
+      users.groups.nordvpn.members = ["thunder"];
       systemd = {
         services.nordvpn = {
           description = "NordVPN daemon.";

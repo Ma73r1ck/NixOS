@@ -82,6 +82,8 @@
   services.flatpak.enable = true;
   services.fprintd.enable = true;
 
+  myypo.services.custom.nordvpn.enable = true;
+
   # Enable CUPS to print documents.
   # services.printing.enable = true;
 
