@@ -1,0 +1,6 @@
+result
+result-*
+*.swp
+*.swo
+*.tmp
+.DS_Store
