@@ -135,7 +135,7 @@
     telegram-desktop
     usbutils
     libfprint-fpcmoh
-    vscode
+    vscodium
     appimage-run
     git
   ];
