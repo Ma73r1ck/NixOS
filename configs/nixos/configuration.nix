@@ -138,6 +138,7 @@
     vscodium
     appimage-run
     git
+    ntfs3g
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
