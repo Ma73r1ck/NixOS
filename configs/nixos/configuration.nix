@@ -140,6 +140,7 @@
     git
     ntfs3g
     qbittorrent-enhanced
+    p7zip
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
