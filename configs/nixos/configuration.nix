@@ -139,6 +139,7 @@
     appimage-run
     git
     ntfs3g
+    qbittorrent-enhanced
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
