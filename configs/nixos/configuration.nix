@@ -141,6 +141,8 @@
     ntfs3g
     qbittorrent-enhanced
     p7zip
+    vmware-workstation
+    virtualbox
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
