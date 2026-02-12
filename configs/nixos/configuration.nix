@@ -111,13 +111,11 @@
   security.pam.services.kde-fingerprint.fprintAuth = lib.mkForce true;
 
   # Virtualization
-  virtualisation.virtualbox.host = {
-    enable = true;
-    enableExtensionPack = true;
-  };
+  programs.virt-manager.enable = true;
+  users.groups.libvirtd.members = ["thunder"];
+  virtualisation.libvirtd.enable = true;
+  virtualisation.spiceUSBRedirection.enable = true;
   virtualisation.vmware.host.enable = true;
-
-  users.users.thunder.extraGroups = [ "vboxusers" ];
 
   # Users.
   users.users.thunder = {
