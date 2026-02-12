@@ -115,6 +115,7 @@
     enable = true;
     enableExtensionPack = true;
   };
+  virtualisation.vmware.host.enable = true;
 
   users.users.thunder.extraGroups = [ "vboxusers" ];
 
@@ -150,7 +151,6 @@
     ntfs3g
     qbittorrent-enhanced
     p7zip
-    vmware-workstation
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
