@@ -109,6 +109,11 @@
   security.pam.services.kde.fprintAuth = lib.mkForce true;
   security.pam.services.kde-fingerprint.fprintAuth = lib.mkForce true;
 
+  # Virtualization
+  virtualisation.virtualbox.host.enable = true;
+  virtualisation.virtualbox.host.enableExtensionPack = true;
+  users.extraGroups.vboxusers.members = [ "thunder" ];
+
   # Users.
   users.users.thunder = {
     isNormalUser = true;
@@ -142,7 +147,6 @@
     qbittorrent-enhanced
     p7zip
     vmware-workstation
-    virtualboxWithExtpack
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
