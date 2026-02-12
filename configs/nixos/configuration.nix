@@ -15,11 +15,12 @@
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
   boot.supportedFilesystems = [ "ntfs" ];
-  boot.kernelModules = [ "ntfs3" ];
+  boot.kernelModules = [ "ntfs3" "vboxdrv" "vboxnetflt" "vboxnetadp" ];
 
 
   # Use latest kernel.
   boot.kernelPackages = pkgs.linuxPackages_latest;
+ 
 
   # Networking.
   networking.hostName = "nixos";
