@@ -142,7 +142,7 @@
     qbittorrent-enhanced
     p7zip
     vmware-workstation
-    virtualbox
+    virtualboxWithExtpack
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
