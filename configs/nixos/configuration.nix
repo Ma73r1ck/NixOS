@@ -150,6 +150,7 @@
     qbittorrent-enhanced
     p7zip
     zoom-us
+    freeoffice
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
