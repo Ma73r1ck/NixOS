@@ -147,7 +147,7 @@
     ntfs3g
     qbittorrent-enhanced
     p7zip
-    urar
+    unrar
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
