@@ -30,4 +30,4 @@ Build before activating:
 nix build .#nixosConfigurations.nixos.config.system.build.toplevel
 ```
 
-After activation, select COSMIC in SDDM. Plasma remains available. To remove the backport, remove `./modules/cosmic-1.11.nix` from the flake modules, remove the `cosmic-source` input and its special argument, then update the lock file.
+COSMIC is the only configured desktop session, with COSMIC Greeter (greetd) as the login screen. To remove the backport, remove `./modules/cosmic-1.11.nix` from the flake modules, remove the `cosmic-source` input and its special argument, then update the lock file.

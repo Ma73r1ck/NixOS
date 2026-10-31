@@ -2,7 +2,7 @@
 # your system.  Help is available in the configuration.nix(5) man page
 # and in the NixOS manual (accessible by running ‘nixos-help’).
 
-{ config, pkgs, lib, ... }:
+{ pkgs, ... }:
 
 {
   imports = [
@@ -99,8 +99,8 @@
     variant = "";
   };
 
-  services.displayManager.sddm.enable = true;
-  services.desktopManager.plasma6.enable = true;
+  services.displayManager.cosmic-greeter.enable = true;
+  services.displayManager.defaultSession = "cosmic";
 
   services.flatpak.enable = true;
   services.fprintd.enable = true;
@@ -129,8 +129,6 @@
   security.rtkit.enable = true;
   security.pam.services.login.fprintAuth = true;
   security.pam.services.sudo.fprintAuth = true;
-  security.pam.services.kde.fprintAuth = lib.mkForce true;
-  security.pam.services.kde-fingerprint.fprintAuth = lib.mkForce true;
 
   # Virtualization
   programs.virt-manager.enable = true;
@@ -144,10 +142,6 @@
     isNormalUser = true;
     description = "Alex Thunder";
     extraGroups = [ "networkmanager" "wheel" ];
-    packages = with pkgs; [
-      kdePackages.kate
-      # thunderbird
-    ];
   };
 
   # Programs.
@@ -159,7 +153,6 @@
     # wget
     vlc
     discord
-    kdePackages.partitionmanager
     gnome-disk-utility
     usbutils
     libfprint-fpcmoh
