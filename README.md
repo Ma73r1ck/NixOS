@@ -31,3 +31,9 @@ nix build .#nixosConfigurations.nixos.config.system.build.toplevel
 ```
 
 COSMIC is the only configured desktop session, with COSMIC Greeter (greetd) as the login screen. To remove the backport, remove `./modules/cosmic-1.11.nix` from the flake modules, remove the `cosmic-source` input and its special argument, then update the lock file.
+
+## COSMIC utilities
+
+The configuration installs COSMIC Tweaks, Clipboard Manager, Minimon, and Caffeine. Tweaks, Minimon, and Caffeine come from the existing pinned COSMIC nixpkgs input; Clipboard Manager is built from its pinned upstream revision with fixed source and dependency hashes.
+
+After activation, open COSMIC Settings → Desktop → Panel (or Dock) → Configure applets and add Clipboard Manager, Minimon, and Caffeine. Launch Tweaks from the application library. Existing panel layouts are preserved. Clipboard data-control support is enabled for clipboard history.

@@ -16,6 +16,7 @@
         modules = [
           ./configs/nixos/configuration.nix
           ./modules/cosmic-1.11.nix
+          ./modules/cosmic-utilities.nix
         ];
       };
     };
